@@ -1,0 +1,14 @@
+<div class="input-group input-group-seamless">
+    <!-- <ng-datepicker class="form-control p-0" 
+        [options]="options"
+        [position]="position"
+        [disabled]="readonly"
+        [(ngModel)]="data" (ngModelChange)="onChange($event)"></ng-datepicker> -->
+    <ng-datepicker class="form-control p-0" 
+        [(ngModel)]="data" (ngModelChange)="onChange($event)"></ng-datepicker>
+    <span class="input-group-append">
+        <button class="input-group-text" disabled>
+            <i class="material-icons">calendar_today</i>
+        </button>
+    </span>
+</div>

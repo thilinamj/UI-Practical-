@@ -1,0 +1,19 @@
+<div class="form-row mx-4 alert alert-secondary px-1 py-2 mt-2 d-flex align-items-center account">
+  <div class="col-md-3 font-weight-bold">
+   {{name}}
+  </div>
+  <div class="col-md-3 font-weight-normal">
+    {{type}}
+  </div>
+  <div class="col-md-3 font-weight-normal">
+    <div> {{branch}}</div>
+    <div class="text-primary" *ngIf="hasAccount">
+      <b>Acc.No:</b> {{accountNumber}}
+    </div>
+  </div>
+  <div class="col-md-3 d-flex justify-content-end">
+    <a href="" class="text-primary">Edit | </a>
+    <a href="" class="text-primary">Delete </a>
+  </div>
+</div>
+

@@ -1,0 +1,8 @@
+<div class="dataTables_info">Showing {{pagination.startIndex}} to {{pagination.endIndex}} of {{pagination.totalCount}} entries</div>
+<div class="dataTables_paginate paging_simple_numbers">
+    <a class="paginate_button previous {{pagination.startIndex === 1 ? 'disabled' : ''}}" (click)="onChangeIndex(pagination.pageIndex - 1)">Previous</a>
+    <span *ngFor="let index of pagination.pageIndexes" (click)="onChangeIndex(index)">
+        <a class="paginate_button {{index === pagination.pageIndex ? 'current' : ''}}">{{index}}</a>
+    </span>
+    <a class="paginate_button next {{pagination.endIndex === pagination.totalCount ? 'disabled' : ''}}" (click)="onChangeIndex(pagination.pageIndex + 1)">Next</a>
+</div>

@@ -1,0 +1,20 @@
+.input-group {
+    min-width: auto !important;
+}
+
+// override
+::ng-deep ng-datepicker {
+    .ngx-datepicker-container {
+        .ngx-datepicker-input {
+        border: none !important;
+        padding: 0.4375rem 1.75rem 0.4375rem 0.75rem !important;
+        width: 100% !important;
+        font-size: inherit !important;
+        margin: 0;
+        }
+        .ngx-datepicker-calendar-container {
+        z-index: 999;
+        }
+    }
+}
+  
