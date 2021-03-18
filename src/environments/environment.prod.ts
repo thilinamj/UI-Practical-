@@ -3,7 +3,7 @@ export const environment = {
   contextPath: '.',
   configs: {
     company: {
-      name: 'Engineering Repairs - Somasiri Stores (PVT) Ltd'
+      name: 'qualitapps.com'
     }
   }
 };
